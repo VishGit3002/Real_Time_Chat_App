@@ -24,7 +24,10 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://real-time-chat-app-six-snowy.vercel.app/"  // Replace with your actual Vercel URL
+    ],
     credentials: true,
   })
 );
