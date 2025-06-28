@@ -26,7 +26,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://real-time-chat-app-six-snowy.vercel.app/"  // Replace with your actual Vercel URL
+      "https://real-time-chat-app-six-snowy.vercel.app"  // Replace with your actual Vercel URL
     ],
     credentials: true,
   })
