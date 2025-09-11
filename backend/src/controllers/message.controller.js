@@ -25,7 +25,7 @@ export const getMessages = async (req, res) => {
       $or: [
         { senderId: myId, receiverId: userToChatId },
         { senderId: userToChatId, receiverId: myId },
-       ],
+      ],
     });
 
     res.status(200).json(messages);

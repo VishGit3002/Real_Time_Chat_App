@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { Camera, Mail, User } from "lucide-react";
@@ -94,20 +95,6 @@ const ProfilePage = () => {
                 <span>Account Status</span>
                 <span className="text-green-500">Active</span>
               </div>
-<div className="flex justify-center mt-6">
-  <button
-    onClick={async () => {
-      if (window.confirm("Are you sure you want to delete your account permanently? This cannot be undone.")) {
-        await deleteAccount();
-        window.location.href = "/login";
-      }
-    }}
-    className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-  >
-    Delete Account
-  </button>
-</div>
-
             </div>
           </div>
         </div>
