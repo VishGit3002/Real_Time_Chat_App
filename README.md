@@ -1,11 +1,3 @@
-
-
-ChatGPT
-You said:
-Make a good readme.md for real time chat app
-ChatGPT said:
-Here’s a clean, professional README.md template for your Real-Time Chat Application (MERN + Socket.IO). I kept it polished but beginner-friendly, so recruiters and collaborators will get a clear idea of your project:
-
 💬 Real-Time Chat Application
 A real-time chat application built with the MERN stack and Socket.IO, allowing users to send and receive messages instantly.
 
