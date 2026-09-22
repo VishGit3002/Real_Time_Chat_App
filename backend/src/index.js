@@ -32,11 +32,11 @@ app.use(
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
-app.get("/api/health", (req, res)=>{
+app.get("/api/health", (req, res) => {
   res.json({
-    message: "api is working";
-  })
-})
+    message: "api is working"
+  });
+});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
