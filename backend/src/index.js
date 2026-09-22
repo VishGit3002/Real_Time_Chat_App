@@ -33,9 +33,9 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.get("/api/health", (req, res)=>{
-  res.json(
+  res.json({
     message: "api is working";
-  )
+  })
 })
 
 if (process.env.NODE_ENV === "production") {
